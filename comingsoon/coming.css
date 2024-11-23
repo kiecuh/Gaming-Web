@@ -1,0 +1,387 @@
+html{
+    font-size: 10px;
+}
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: rgb(130, 8, 8) !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 90%;
+    width: 100%;
+    z-index: 9999;
+}
+
+
+.brand {
+    color: #ffffff;
+    letter-spacing: -5px;
+    font-family: 'Audiowide', cursive;  
+}
+
+.navbar .brand {
+    font-size: 40px !important;
+    text-decoration: none;
+}
+
+
+.navbar-nav .home {
+    font-family: 'Audiowide', cursive;  
+    color: #000000;
+    margin-left: 80px;
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+
+.more {
+    font-family: 'Audiowide', cursive;  
+    color: #000000;
+    margin-left: -350px;
+    font-size: 20px;
+    margin-top: -35px;
+    position: absolute;
+}
+.all {
+    font-family: 'Audiowide', cursive; 
+    color: #000000;
+    margin-left: -470px;
+    font-size: 20px;
+    margin-top: -35px;
+    position: fixed;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .form-control {
+    flex-grow: 1;
+    padding: 2px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .form-control::placeholder {
+    color: #999; 
+  }
+  
+
+  .btn {
+    padding: 5px 20px;
+    background-color:#3e3d3d; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.05); 
+  }
+  
+  .ms-3 {
+    margin-left: 10px; 
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Ensure body takes full height */
+  margin: 0;
+  background-color: #333; /* Background to see white text clearly */
+}
+
+.coming {
+  font-family: 'Audiowide', cursive; 
+  font-size: 100px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+ 
+@media (max-width: 1240px) {
+  body {
+      touch-action: manipulation;
+  }
+
+  html, body {
+      font-size: 8px; /* Reasonable base font size for small screens */
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      box-sizing: border-box;
+  }
+
+  .navbar {
+      position: fixed;
+      bottom: 0;
+      padding: 30px 40px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background-color: #fff;
+      height: 0vh;
+  }
+
+  .navbar .brand {
+      font-size: 30px !important;
+      letter-spacing: -3px;
+      margin-top: 5px;
+      margin-left: -40px;
+  }
+
+  .navbar-nav .home {
+      font-size: 12px !important;
+      margin-left: 250px !important;
+  }
+  .all {
+      margin-top: 3px;
+      font-size: 12px !important;
+      margin-left: -600px !important;
+  }
+
+  .more {
+      margin-top: 3px;
+      font-size: 12px !important;
+      margin-left: -373px !important;
+  }
+
+
+  .navbar-toggler {
+      padding: 5px 10px;
+      margin-top: -20px;
+  }
+
+
+}
+@media (max-width: 1024px) {
+  body {
+      touch-action: manipulation;
+  }
+
+  html, body {
+      font-size: 8px; /* Reasonable base font size for small screens */
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      box-sizing: border-box;
+  }
+
+  .navbar {
+      position: fixed;
+      bottom: 0;
+      padding: 30px 40px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background-color: #fff;
+      height: 0vh;
+  }
+
+  .navbar .brand {
+      font-size: 30px !important;
+      letter-spacing: -3px;
+      margin-top: 5px;
+      margin-left: -40px;
+  }
+
+  .navbar-nav .home {
+      font-size: 12px !important;
+      margin-left: 50px !important;
+  }
+  .all {
+      margin-top: 3px;
+      font-size: 12px !important;
+      margin-left: -600px !important;
+  }
+
+  .more {
+      margin-top: 3px;
+      font-size: 12px !important;
+      margin-left: -373px !important;
+  }
+
+
+  .navbar-toggler {
+      padding: 5px 10px;
+      margin-top: -20px;
+  }
+
+}
+@media (max-width: 990px) {
+  body {
+      touch-action: manipulation;
+  }
+
+  html, body {
+      font-size: 12px; /* Increased base font size for readability on medium screens */
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      box-sizing: border-box;
+  }
+
+  /* Navbar styles */
+  .navbar {
+      position: fixed; /* Fix navbar to the bottom */
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      padding: 10px 50px; /* Adjust padding for smaller screens */
+      height: auto;
+      display: flex;
+      justify-content: space-between; /* Space out navbar items */
+      align-items: center; /* Center items vertically */
+      height: 50px;
+  
+  }
+
+  .navbar .brand {
+      font-size: 25px !important; /* Slightly smaller font size */
+      letter-spacing: -2px;
+      margin-top: -5px ; /* Reset margin-top to avoid shifting */
+      margin-left: 0; /* Reset margin-left */
+  }
+
+  .navbar-nav .home {
+      font-size: 14px !important;
+      margin-left: 20px !important; /* Adjust margin to align better */
+  }
+
+  .all {
+      margin-top: 0;
+      font-size: 14px !important;
+      margin-left: 0 !important; /* Reset margin */
+  }
+
+  .more {
+      margin-top: 0;
+      font-size: 14px !important;
+      margin-left: 0 !important; /* Reset margin */
+  }
+
+  .navbar-toggler {
+      padding: 5px 10px;
+      margin-top: 40px;
+  }
+  .navbar-toggler {
+      padding: 5px 10px;
+      margin-top: -10px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+      touch-action: manipulation;
+  }
+
+  html, body {
+      font-size: 8px; /* Reasonable base font size for small screens */
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      box-sizing: border-box;
+  }
+
+  .navbar {
+      position: fixed;
+      bottom: 0;
+      padding: 30px 40px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background-color: #fff;
+      height: 0vh;
+  }
+
+  .navbar .brand {
+      font-size: 30px !important;
+      letter-spacing: -3px;
+      margin-top: -20px;
+      margin-left: -40px;
+  }
+
+  .navbar-nav .home {
+      font-size: 12px !important;
+      margin-left: -250px !important;
+  }
+  .all {
+      margin-top: -5px;
+      font-size: 12px !important;
+      margin-left: -250px !important;
+  }
+
+  .more {
+      font-size: 12px !important;
+      margin-left: -220px !important;
+  }
+
+
+  .navbar-toggler {
+      padding: 5px 10px;
+      margin-top: -20px;
+  }
+
+
+}
+  @media (max-width: 320px) {
+      body {
+          touch-action: manipulation;
+      }
+  
+      html, body {
+          font-size: 5px; /* Reasonable base font size for small screens */
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          box-sizing: border-box;
+      }
+  
+      .navbar {
+          position: fixed;
+          bottom: 0;
+          padding: 20px 20px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          background-color: #fff;
+      }
+  
+      .navbar .brand {
+          font-size: 20px !important;
+          margin-left: -10px;
+          letter-spacing: -2px;
+          margin-top: -10px !important;
+      }
+  
+      .navbar-nav .home, .more, .all {
+          font-size: 12px !important;
+          margin-left: -10px !important;
+          flex-shrink: 0;
+      }
+  
+      .navbar-toggler {
+          padding: 5px 10px;
+          margin-top: -10px;
+      }
+ 
+}
+
